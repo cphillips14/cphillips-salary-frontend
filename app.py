@@ -20,7 +20,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/predict", methods=["GET", "POST"])
+@app.route("/salary-prediction/api/v1/salary", methods=["GET", "POST"])
 def predict():
     print("in predict route")
     if request.method == "GET":
